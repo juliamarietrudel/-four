@@ -6,7 +6,13 @@
 
   <p>
     <strong>Content:</strong>
-    <%= article.content %>
+    <span  data-controller="typed" data-typed-strings-value="<%= [article.content] %>">
+    </span>
+  </p>
+
+  <p>
+    <strong>Location</strong>
+    <%= article.location %>
   </p>
 
 </div>
